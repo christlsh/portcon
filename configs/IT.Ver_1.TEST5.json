@@ -1,0 +1,46 @@
+{
+    "alpha_name": "IT_ver1",
+    "alpha_path": "/data/crypto/live/alpha/IT_ver1",
+    "T1e":"alpha_T1e_IT_ver1",
+    "T2e":"alpha_T2e_IT_ver1",
+    "T4e":"alpha_T4e_IT_ver1",
+    "T8e": "alpha_T8e_IT_ver1",
+    "T24e": "alpha_T24e_IT_ver1",
+    "strat_name": "IT_ver1.AUM1e8.styles0.5.vol5e-3.horizon-1_0_0_0_1.swu0.1.to0.05",
+    "exe_time": [5,0],
+    "power_number":2,
+    "style_factors":["BETA","RESVOL","MOM"],
+    "industry_factors":[],
+    "factor_bounds" : {
+        "BETA": [-0.5,0.5],
+        "RESVOL": [-0.5, 0.5],
+        "MOM": [-0.5, 0.5]
+        
+    },
+    "weights_constraints":{
+        "total_long_weights": 1,
+        "total_short_weights": 1
+    },
+    "portfolio_constraints":{
+        "target_vol": 5e-3,
+        "tc_const": 1.5,
+        "tc_const_intra": 1.5,
+        "T1e":-1,
+        "T2e":0,
+        "T4e":0,
+        "T8e": 0,
+        "T24e": 1,
+        "single_stock_limit_long": 0.1,
+        "single_stock_limit_short": 0.1,
+        "total_cap": 1e8,
+        "AUM_ratio": 1,
+        "min_single_stock_weight": 1e-4,
+        "turnover_limit": 0.05,
+        "turnover_limit_intra": 0.05,
+        "factor_risk":1,
+        "srisk":1,
+        "impact_para":1e-5
+    },
+    "max_iters": 5000
+
+}
